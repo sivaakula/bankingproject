@@ -1,0 +1,11 @@
+.spacer{
+    flex: 1 1 auto;
+}
+body{
+    background-image: linear-gradient(#000000c3,#000000c3),url(bene.jfif);
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    
+}

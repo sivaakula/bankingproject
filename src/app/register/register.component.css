@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(#000000c3,#000000c3),url(register.jfif);
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    
+}

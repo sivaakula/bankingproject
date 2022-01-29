@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <button mat-icon-button><mat-icon (click)="sidenav.toggle();">menu</mat-icon></button>
+    <span>My Bank Application</span>
+     
+    <div class="spacer"></div>
+
+    <a mat-button routerLink="profile">PROFILE</a>
+    <a mat-button routerLink="login">LOG IN</a>
+    <a mat-button routerLink="register"> REGISTER</a>
+    <a mat-raised-button color="accent" routerLink="logout">LOG OUT</a>
+   
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav opened="true" mode="side">
+     <mat-nav-list>
+        
+        <div mat-list-item> <a mat-button routerLink="account">ACCOUNT INFO</a></div> 
+        <div mat-list-item>  <a mat-button routerLink="beneficiary"> BENEFICIARY</a></div>
+        <div mat-list-item>  <a mat-button routerLink="nominee"> NOMINEE</a></div>
+        <div mat-list-item> <a mat-button routerLink="transactions"> TRANSACTIONS</a></div>
+        <div mat-list-item> <a mat-button routerLink="logout"> LOG OUT</a></div>
+     </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+     <div style="height: 88vh;"><router-outlet></router-outlet></div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+<h1>Welcome</h1>
